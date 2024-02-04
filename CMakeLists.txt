@@ -1,3 +1,4 @@
+# Build example.
 if (ONEWIRE_EXAMPLE)
     # Set CMake requirement.
     cmake_minimum_required(VERSION 3.13)
@@ -15,6 +16,7 @@ if (ONEWIRE_EXAMPLE)
     add_subdirectory(example)
 endif()
 
+# Build library.
 add_library(onewire INTERFACE)
 
 target_sources(onewire INTERFACE
