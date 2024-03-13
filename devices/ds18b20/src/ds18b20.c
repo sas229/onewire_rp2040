@@ -32,8 +32,8 @@ int16_t ds18b20_read_temperature(OW *ow, uint64_t *romcode) {
 
     // Read temperature bytes from the DS18B20 scratchpad.
     uint8_t data[2];
-    data[0] = ow_read(ow); // LSB
-    data[1] = ow_read(ow); // MSB
+    data[0] = ow_read(ow); // LSB.
+    data[1] = ow_read(ow); // MSB.
     uint16_t temp12 = (data[1] << 8) + data[0]; // 12-bit temperature.
 
     // Check if temperature is negative.
