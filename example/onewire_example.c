@@ -11,7 +11,7 @@ int main() {
 
     // Setup PIO OneWire.
     PIO pio = pio0;
-    uint gpio = 15;
+    uint gpio = 28;
     OW ow;
     uint offset;
 

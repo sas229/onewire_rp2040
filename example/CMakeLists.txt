@@ -15,8 +15,8 @@ target_compile_definitions(onewire_example PRIVATE
         )
 
 # Enable stdio outputs as required.
-pico_enable_stdio_usb(onewire_example 0)
-pico_enable_stdio_uart(onewire_example 1)
+pico_enable_stdio_usb(onewire_example 1)
+pico_enable_stdio_uart(onewire_example 0)
 
 # Create output.
 pico_add_extra_outputs(onewire_example)
